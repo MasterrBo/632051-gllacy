@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Анастасия Шкодских](https://up.htmlacademy.ru/htmlcss/23/user/632051).
-* Наставник: `Неизвестно`.
+* Наставник: [Константин Антонов](https://htmlacademy.ru/profile/konstantin_rawle).
 
 ---
 
