@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+    <head>
+        <meta charset="utf-8">
+    	<title>Gllacy Shop - магазин по продаже мороженого</title>
+    </head>
+    <body>
+    	<header class="main-header">
+            <nav class="main-navigation">
+            	<a class="main-header-logo">
+            		<img src="img/index-logo.svg" width="150" height="100" alt="Логотип магазина Gllacy">
+            	</a>
+                <ul class="site-navigation">
+            		<li><a href="catalog.html">Каталог</a></li>
+          			<li><a href="delivery.html">Доставка и оплата</a></li>
+		            <li><a href="about.html">О компании</a></li>
+        		</ul>
+        		<ul class="user-navigation">
+        		    <li class="search-link">Поиск</li>
+          			<li class="entry-link">Вход</li>
+					<li class="cart-link">Пусто</li>
+        		</ul>
+            </nav> 
+        </header>
+    	<main class="container">
+        <!-- идет блок, который делать не надо -->
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+            <section class="advantages">
+                <h1>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
+                <ul class="advantages-list">
+                    <li class="advantages-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+                    <li class="advantages-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </li>
+                    <li class="advantages-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+                    <li class="advantages-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+                </ul>
+            </section>
 
-  </body>
+	        <section class="information">
+                <div class="blog-news">
+                    <b>Новое в нашем блоге</b>
+                    <p class="blog-anons">
+                        <a href="10-sposobov-servirovki.html">10 способов сервировки фруктовых щербетов к столу</a>
+                    </p>
+                </div>
+                <div class="mailing">
+                    <p class="mailing-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                    <!-- Здесь будет форма, которую пока делать не надо -->
+                </div>
+        	</section>
+        </main>            
+
+        <!-- Идет блок с картой, которую пока делать не надо -->  
+        <footer class="main-footer">  
+            <div class="footer-social">
+                <ul>
+                    <li><a class="social-button" href="#">Twitter</a></li>
+                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                    <li><a class="social-button" href="#">Вконтакте</a></li>
+                    <li><a class="social-button" href="#">Фейсбук</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="vendors.html">Для поставщиков</a></li>
+                    <li><a href="production.html">О производстве</a></li>
+                    <li><a href="documents.html">Наши документы</a></li>
+                    <li><a href="ecology.html">Экологические стандарты</a></li>
+                </ul>
+            </div>
+            <p class="footer-copyright">
+                <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+                Сделано в HTML Academy (С) 2017 
+            </p>
+        </footer>
+
+        <section class="modal search">
+            <!-- Здесь будет форма -->
+        </section>
+
+        <section class="modal modal-login">
+            <!-- Здесь будет форма -->
+            <button class="modal-entrance">Войти</button>   
+        </section>
+
+        <section class="modal modal-feedback">
+            <!-- Здесь будет форма -->
+            <p class="feedback">Мы обязательно вам ответим!</p>
+            <button class="modal-send">Отправить</button>
+            <span class="modal-feedback-close">x</span>
+        </section>
+    </body>
 </html>
