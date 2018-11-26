@@ -15,12 +15,47 @@
                     <li><a href="delivery.html">Доставка и оплата</a></li>
                     <li><a href="about.html">О компании</a></li>
                 </ul>
+
                 <ul class="user-navigation">
                     <li class="search-link">Поиск</li>
-                    <li class="entry-link">Вход</li>
-                    <li class="cart-link">2 товара</li>
-                </ul>
-            </nav>           
+                    <li class="entry-link">
+                         <a class="login-link" href="login.html">
+                        Вход
+                        </a>
+                    </li>
+                    <li class="cart__list">
+                        <a class="cart__list-link">2 товара</a>
+                        <ul class="cart__list-content">
+                            <li>
+                                <span class="visually-hidden">Корзина</span>
+                            </li>
+                            <li class="cart__list-item-first">
+                                <button class="cart__list-item-delete" type="button">Удалить</button>
+                                <a href="catalog-item1.html">
+                                    <img class="cart__list-item-img" src="img/product-img/slivochnoe-1.jpg" width="32" height="32" alt="Пломбир с апельсиновым джемом">
+                                    <span class="cart__list-item-title">Пломбир с апельсиновым джемом</span>
+                                </a>
+                                <span class="cart__list-item-cost">1,5 кг x 200 руб</span>
+                                <span class="cart__list-item-price">300 руб</span>
+                            </li>
+                            <li class="cart__list-item-last">
+                                <button class="cart__list-item-delete" type="button">Удалить</button>
+                                <a href="catalog-item2.html">
+                                    <img class="cart__list-item-img" src="img/product-img/slivochnoe-3.jpg" width="32" height="32" alt="Пломбир с апельсиновым джемом">
+                                    <span class="cart__list-item-title">Клубничный пломбир с присыпкой  из белого шоколада</span>
+                                </a>
+                                <span class="cart__list-item-calc">1,5 кг x 300 руб</span>
+                                <span class="cart__list-item-price">450 руб</span>
+                            </li>
+                            <li class="cart__list-total">
+                                <span>Итого: 750 руб</span>
+                            </li>    
+                        </ul>
+                        <a class="button cart__list-button" href="#">Оформить заказ</a>
+                    </li>                       
+                </ul>             
+            </nav>
+                      
             <div class="main-contacts">
                 <p class="main-contacts-text">
                     С 10 до 20, ежедневно<br> 
