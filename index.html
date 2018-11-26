@@ -11,7 +11,16 @@
             		<img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
             	</a>
                 <ul class="site-navigation">
-            		<li><a href="catalog.html">Каталог</a></li>
+            		<li>
+                        <a href="catalog.html">Каталог</a>
+                        <ul class="visually-hidden">
+                            <li><a href="#">Новинки</a></li>
+                            <li><a href="#">Сливочное</a></li>
+                            <li><a href="#">Щербеты</a></li>
+                            <li><a href="#">Фруктовый лед</a></li>
+                            <li><a href="#">Мелорин</a></li>
+                        </ul>
+                    </li>
           			<li><a href="delivery.html">Доставка и оплата</a></li>
 		            <li><a href="about.html">О компании</a></li>
         		</ul>
@@ -88,20 +97,57 @@
             </div>
         </footer>
 
-        <section class="modal search">
-            <!-- Здесь будет форма -->
+        <section class="modal__search">
+            <form class="modal__search-form" method="post">
+                <p>
+                    <input class="modal__search-form-user" type="text" name="search" placeholder="Что ищем?">
+                </p>
+            </form> 
+        </section>  
+
+        <section class="modal__login">
+            <form class="modal__login-form" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                    <label class="visually-hidden" for="user-mail">Электронная почта</label>
+                    <input class="login-icon-user" id="user-mail" type="text" name="email" placeholder="Электронная почта">
+                </p>
+                <p>
+                    <label class="visually-hidden" for="user-password">Пароль</label>
+                    <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+                </p>
+                <button class="button" type="submit">
+                    Войти
+                </button>
+                <ul class="registration">
+                    <li><a href="#">Забыли пароль?</a></li>
+                    <li><a href="#">Новая регистрация</a></li>
+                </ul>
+            </form>
         </section>
 
-        <section class="modal modal-login">
-            <!-- Здесь будет форма -->
-            <button class="modal-entrance">Войти</button>   
-        </section>
-
-        <section class="modal modal-feedback">
-            <!-- Здесь будет форма -->
-            <p class="feedback">Мы обязательно вам ответим!</p>
-            <button class="modal-send">Отправить</button>
-            <span class="modal-feedback-close">x</span>
+        <section class="modal__feedback">
+            <p>Мы обязательно вам ответим!</p>
+            <form class="modal__-feedback-form" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                <label class="visually-hidden" for="user-name">Имя</label>
+                <input class="name-icon-user" id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
+                </p>
+                <p>
+                <label class="visually-hidden" for="user-email">Электронная почта</label>
+                <input class="email-icon-user" id="user-email" type="text" name="user-email" placeholder="Ваша почта для ответа?">
+                </p>
+                <p>
+                <label class="visually-hidden" for="user-message">Текст сообщения</label>
+                <input class="name-icon-user" id="user-message" type="text" name="user-message" placeholder="Напишите что-нибудь">
+                </p>
+                <button class="button" type="submit">
+                    Отправить
+                </button>
+            </form>
+            <button class="modal-close" type="button">
+            <!-- Тут должно быть закрытие по крестику -->
+            Закрыть
+            </button>
         </section>
     </body>
 </html>
