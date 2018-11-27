@@ -24,11 +24,35 @@
           			<li><a href="delivery.html">Доставка и оплата</a></li>
 		            <li><a href="about.html">О компании</a></li>
         		</ul>
-        		<ul class="user-navigation">
-        		    <li class="search-link">Поиск</li>
-          			<li class="entry-link">Вход</li>
-					<li class="cart-link">Пусто</li>
-        		</ul>
+
+                <ul class="user-navigation">
+                    <li class="button-navigation search-link"><a class="visually-hidden" href="search.html">Поиск по сайту</a>
+                        <div class="modal modal-search">
+                            <h2 class="visually-hidden">Форма поиска</h2>
+                            <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+                                <label class="visually-hidden">Строка поиска
+                                <input type="search" name="search" placeholder="Что ищем?"></label>
+                            </form>
+                        </div>
+                    </li>   
+                    <li class="button-navigation entry-link"><a href="entry.html">Вход</a>
+                        <div class="modal modal-login">
+                            <form class="modal__login-form" action="https://echo.htmlacademy.ru" method="post">
+                                <input type="text" name="email" placeholder="Электронная почта">
+                                <input type="password" name="password" placeholder="Пароль">
+                                <button class="button login__button" type="submit">Войти</button>
+                                <div class="modal__registration">
+                                    <a class="modal__registration-link" href="#">Забыли пароль?</a>
+                                    <a class="modal__registration-link" href="#">Новая регистрация</a>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="button-navigation empty-basket">
+                        <a href="basket.html">Пусто</a>
+                    </li>
+                </ul>
+
             </nav> 
         </header>
     	<main class="container">
@@ -97,57 +121,18 @@
             </div>
         </footer>
 
-        <section class="modal__search">
-            <form class="modal__search-form" method="post">
-                <p>
-                    <input class="modal__search-form-user" type="text" name="search" placeholder="Что ищем?">
-                </p>
-            </form> 
-        </section>  
-
-        <section class="modal__login">
-            <form class="modal__login-form" action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                    <label class="visually-hidden" for="user-mail">Электронная почта</label>
-                    <input class="login-icon-user" id="user-mail" type="text" name="email" placeholder="Электронная почта">
-                </p>
-                <p>
-                    <label class="visually-hidden" for="user-password">Пароль</label>
-                    <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-                </p>
-                <button class="button" type="submit">
-                    Войти
-                </button>
-                <ul class="registration">
-                    <li><a href="#">Забыли пароль?</a></li>
-                    <li><a href="#">Новая регистрация</a></li>
-                </ul>
-            </form>
-        </section>
-
-        <section class="modal__feedback">
-            <p>Мы обязательно вам ответим!</p>
-            <form class="modal__-feedback-form" action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                <label class="visually-hidden" for="user-name">Имя</label>
+        <div class="modal__feedback">
+            Мы обязательно вам ответим!
+            <button class="button button-close" type="button">Х</button>
+            <form class="modal__feedback-form" action="https://echo.htmlacademy.ru" method="post">
                 <input class="name-icon-user" id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
-                </p>
-                <p>
-                <label class="visually-hidden" for="user-email">Электронная почта</label>
                 <input class="email-icon-user" id="user-email" type="text" name="user-email" placeholder="Ваша почта для ответа?">
-                </p>
-                <p>
-                <label class="visually-hidden" for="user-message">Текст сообщения</label>
-                <input class="name-icon-user" id="user-message" type="text" name="user-message" placeholder="Напишите что-нибудь">
-                </p>
-                <button class="button" type="submit">
-                    Отправить
-                </button>
+                <textarea name="comments" placeholder="Напишите что-нибудь..."></textarea>
+                <button class="button button-send" type="submit">Отправить</button>
             </form>
-            <button class="modal-close" type="button">
-            <!-- Тут должно быть закрытие по крестику -->
-            Закрыть
-            </button>
-        </section>
+        </div>
     </body>
 </html>
+
+
+
