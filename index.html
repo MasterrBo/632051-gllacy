@@ -10,21 +10,21 @@
             	<a class="main-header-logo">
             		<img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
             	</a>
+
                 <ul class="site-navigation">
-            		<li>
+                    <li>
                         <a href="catalog.html">Каталог</a>
-                        <ul class="visually-hidden">
-                            <li><a href="#">Новинки</a></li>
-                            <li><a href="#">Сливочное</a></li>
-                            <li><a href="#">Щербеты</a></li>
-                            <li><a href="#">Фруктовый лед</a></li>
-                            <li><a href="#">Мелорин</a></li>
+                        <ul class="catalog__navigation">
+                            <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Новинки</a></li>
+                            <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Сливочное</a></li>
+                            <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Щербеты</a></li>
+                            <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Фруктовый лед</a></li>
+                            <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Мелорин</a></li>
                         </ul>
                     </li>
-          			<li><a href="delivery.html">Доставка и оплата</a></li>
-		            <li><a href="about.html">О компании</a></li>
-        		</ul>
-
+                    <li><a href="delivery.html">Доставка и оплата</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                </ul>
                 <ul class="user-navigation">
                     <li class="button-navigation search-link"><a class="visually-hidden" href="search.html">Поиск по сайту</a>
                         <div class="modal modal-search">
@@ -125,8 +125,8 @@
             Мы обязательно вам ответим!
             <button class="button button-close" type="button">Х</button>
             <form class="modal__feedback-form" action="https://echo.htmlacademy.ru" method="post">
-                <input class="name-icon-user" id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
-                <input class="email-icon-user" id="user-email" type="text" name="user-email" placeholder="Ваша почта для ответа?">
+                <input class="feedback__input" id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
+                <input class="feedback__input" id="user-email" type="text" name="user-email" placeholder="Ваша почта для ответа?">
                 <textarea name="comments" placeholder="Напишите что-нибудь..."></textarea>
                 <button class="button button-send" type="submit">Отправить</button>
             </form>

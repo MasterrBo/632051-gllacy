@@ -13,26 +13,43 @@
                 <ul class="site-navigation">
                     <li>
                         <a href="catalog.html">Каталог</a>
-                        <ul class="visually-hidden">
-                            <li><a href="#">Новинки</a></li>
-                            <li><a href="#">Сливочное</a></li>
-                            <li><a href="#">Щербеты</a></li>
-                            <li><a href="#">Фруктовый лед</a></li>
-                            <li><a href="#">Мелорин</a></li>
+                        <ul class="catalog__navigation">
+                            <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Новинки</a></li>
+                            <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Сливочное</a></li>
+                            <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Щербеты</a></li>
+                            <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Фруктовый лед</a></li>
+                            <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Мелорин</a></li>
                         </ul>
                     </li>
                     <li><a href="delivery.html">Доставка и оплата</a></li>
                     <li><a href="about.html">О компании</a></li>
                 </ul>
+
                 <ul class="user-navigation">
-                    <li class="search-link">Поиск</li>
-                    <li class="entry-link">
-                         <a class="login-link" href="login.html">
-                        Вход
-                        </a>
+                    <li class="button-navigation search-link"><a class="visually-hidden" href="search.html">Поиск по сайту</a>
+                        <div class="modal modal-search">
+                            <h2 class="visually-hidden">Форма поиска</h2>
+                            <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+                                <label class="visually-hidden">Строка поиска
+                                <input type="search" name="search" placeholder="Что ищем?"></label>
+                            </form>
+                        </div>
+                    </li>   
+                    <li class="button-navigation entry-link"><a href="entry.html">Вход</a>
+                        <div class="modal modal-login">
+                            <form class="modal__login-form" action="https://echo.htmlacademy.ru" method="post">
+                                <input type="text" name="email" placeholder="Электронная почта">
+                                <input type="password" name="password" placeholder="Пароль">
+                                <button class="button login__button" type="submit">Войти</button>
+                                <div class="modal__registration">
+                                    <a class="modal__registration-link" href="#">Забыли пароль?</a>
+                                    <a class="modal__registration-link" href="#">Новая регистрация</a>
+                                </div>
+                            </form>
+                        </div>
                     </li>
-                    <li class="button-navigation cart__list ">
-                        <a class="cart__list-link" href="#">2 товара</a>
+                    <li class="button-navigation cart__list">
+                        <a class="cart__list-link" href="full-basket.html">2 товара</a>
                         <table class="cart__list-content">
                             <tr>
                                 <td>
