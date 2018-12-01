@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #323232;
+  text-transform: none;
+
+  background-color: #849d8f;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: underline;
+}
+
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.user-navigation {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover, 
+.user-navigation a:hover {
+    background: #ffbed4; /* Цвет фона под ссылкой */ 
+    color: #323232; /* Цвет ссылки */ 
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus {
+    background: #f6b5a5;
+    color: #323232; 
+}
+
+.header__contacts-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.header__contacts-tel {
+  font-size: 22px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.advantages h1 {
+  font-family: "Roboto", "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages {
+  background-image: url("img/waffle-background.png");
+  color: #eee1c8;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+.advantages-item {
+  font-family: "Roboto", "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  font-weight: 400;
+}
+
+.information {
+  background-image: url("img/strawberry-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+.blog-preview-title {
+  font-family: "Roboto", "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  font-weight: 500;
+}
+
+.blog-preview a {
+  font-family: "Roboto", "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  font-weight: 700;
+}
+
+.mailing {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f8f7f4
+}
+
+.mailing-info {
+  font-family: "Roboto", "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+  font-weight: 400;
+  background-image: url("img/mail-base.png");
+}
+
+.blog-preview a:focus {
+  color: #e84d37; 
+}
+
+.blog-preview a:hover {
+  color: #e84d37; 
+}
+
+.main-footer {
+  color: #ffffff;
+  background-color: #849d8f; 
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.main-footer a:focus {
+  color: #ffbc9e; 
+  text-decoration: underline;
+}
+
+.main-footer a:hover { 
+  color: #ffbc9e; 
+  text-decoration: underline;
+}
+
+.footer__social {
+  text-align: center;
+}
+
+.footer__social ul,
+.footer__nav ul {
+  list-style: none;
+}
+
+.footer__social-item-btn {
+  color: #849d8f;
+}
+
+.footer__nav-about a {
+  color: #fefefe;
+  font-family: "Roboto", "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.footer__copyright {
+  color: #fefefe;
+  font-family: "Roboto", "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.provider a {
+  color: #ffffff;
+  font-family: "Roboto", "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.modal__feedback,
+.modal-login, 
+.modal-search,
+.cart__list-block {
+  display: none;
+}
+
+/* CATALOG PAGE */ 
+
+.breadcrumbs a {
+  font-family: "Roboto", "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.h1-info {
+  font-family: "Roboto", PT Sans, sans-serif;
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.breadcrumbs-item {
+  font-family: "Roboto", "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.breadcrumbs, 
+.catalog-list {
+  list-style: none;
+}
+
+.breadcrumbs a:focus,
+.catalog-item a:focus {
+  color: #ffbc9e; 
+  text-decoration: underline;
+}
+
+.breadcrumbs a:hover,
+.catalog-item a:hover { 
+  color: #ffbc9e; 
+  text-decoration: underline;
+}
+
+.cart__list a { 
+  color: #323232
+}
+
+.catalog-item__price {
+  font-family: "Roboto", "PT Sans", sans-serif;
+  font-size: 45px;
+  line-height: 45px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.catalog-item__weight {
+  font-family: "Roboto", "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 45px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.catalog-item a {
+  font-family: "Roboto", "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+  
