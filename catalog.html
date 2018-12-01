@@ -3,6 +3,10 @@
     <head>
         <meta charset="utf-8">
         <title>Gllacy Shop - каталог мороженого</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
     </head>
     <body>
         <header class="main-header">
@@ -50,51 +54,53 @@
                     </li>
                     <li class="button-navigation cart__list">
                         <a class="cart__list-link" href="full-basket.html">2 товара</a>
-                        <table class="cart__list-content">
-                            <tr>
-                                <td>
-                                    <button class="cart__list-delete" type="button"><span class="visually-hidden">Удалить из корзины</span></button>
-                                </td>
-                                <td>
-                                    <img src="img/product-img/slivochnoe-1.jpg" width="32" height="32" alt="Пломбир с апельсиновым джемом">
-                                    <a class="cart__list-item-title">Пломбир с апельсиновым джемом</a>
-                                </td>
-                                <td>
-                                    <span class="cart__list-item-cost">1,5 кг x 200 руб</span>
-                                </td>
-                                <td>
-                                    <span class="cart__list-item-price">300 руб</span>
-                                <td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <button class="cart__list-delete" type="button"><span class="visually-hidden">Удалить из корзины</span></button>
-                                </td>
-                                <td>
-                                    <img src="img/product-img/slivochnoe-3.jpg" width="32" height="32" alt="Пломбир из белого шоколада">
-                                    <a class="cart__list-item-title">Клубничный пломбир с присыпкой из белого шоколада</a>
-                                </td>
-                                <td>
-                                    <span class="cart__list-item-cost">1,5 кг x 300 руб</span>
-                                </td>
-                                <td>
-                                    <span class="cart__list-item-price">450 руб</span>
-                                <td>
-                            </tr>                            
-                        </table>
-                        <p class="cart__list-total>Итого: 750 руб</p>
-                        <a class="button cart__list-button" href="#">Оформить заказ</a>
+                        <div class="cart__list-block">
+                            <table class="cart__list-content">
+                                <tr>
+                                    <td>
+                                        <button class="cart__list-delete" type="button"><span class="visually-hidden">Удалить из корзины</span></button>
+                                    </td>
+                                    <td>
+                                        <img src="img/product-img/slivochnoe-1.jpg" width="32" height="32" alt="Пломбир с апельсиновым джемом">
+                                        <a class="cart__list-item-title">Пломбир с апельсиновым джемом</a>
+                                    </td>
+                                    <td>
+                                        <span class="cart__list-item-cost">1,5 кг x 200 руб</span>
+                                    </td>
+                                    <td>
+                                        <span class="cart__list-item-price">300 руб</span>
+                                    <td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="cart__list-delete" type="button"><span class="visually-hidden">Удалить из корзины</span></button>
+                                    </td>
+                                    <td>
+                                        <img src="img/product-img/slivochnoe-3.jpg" width="32" height="32" alt="Пломбир из белого шоколада">
+                                        <a class="cart__list-item-title">Клубничный пломбир с присыпкой из белого шоколада</a>
+                                    </td>
+                                    <td>
+                                        <span class="cart__list-item-cost">1,5 кг x 300 руб</span>
+                                    </td>
+                                    <td>
+                                        <span class="cart__list-item-price">450 руб</span>
+                                    <td>
+                                </tr>                            
+                            </table>
+                            <p class="cart__list-total>Итого: 750 руб</p>
+                            <a class="button cart__list-button" href="#">Оформить заказ</a>
+                        </div>
                     </li>                       
                 </ul>               
             </nav>
 
-            <div class="main-contacts">
-                <p class="main-contacts-text">
-                    С 10 до 20, ежедневно<br> 
-                    8 812 450-25-25
+            <div class="header__contacts">
+                <p class="header__contacts-text">
+                    С 10 до 20, ежедневно<p>
+                <p class="header__contacts-tel"> 
+                    8 812 450-25-25<p>
                 </p>
             </div>             
-        </header>
 
         <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -107,12 +113,14 @@
         </ul>
 
         <main class="container">
-            
-            <h1>Сливочное</h1>
+            <div class="h1-info">
+                <h1 class="">Сливочное мороженое</h1>
+            </div>
+
             <!-- тут должен быть блок с фильтрами, пока не верстаем -->
 
             <section class="catalog">
-                <h2 class="visually-hidden">Виды сливочного мороженого</h2>
+                <h2 class="visually-hidden h2-info">Виды сливочного мороженого</h2>
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <div class="catalog-item__image">
@@ -219,38 +227,43 @@
                     </ul>
         </main>
 
-        <footer class="footer">  
-            <ul class="footer__social">
-                <li class="footer__social-item">
-                    <a class="footer__social-item-link" href="#">Twitter</a>
-                </li>
-                <li class="footer__social-item">
-                    <a class="footer__social-item-link" href="#">Инстаграм</a>
-                </li>
-                <li class="footer__social-item">
-                    <a class="footer__social-item-link" href="#">Вконтакте</a>
-                </li>
-                <li class="footer__social-item">
-                <a class="footer__social-item-link" href="#">Фейсбук</a>
-                </li>
-            </ul>
-            <ul class="footer__nav-about">
-                <li class="footer__nav-about-item">
-                    <a class="footer__nav-about-item-link" href="vendors.html">Для поставщиков</a>
-                </li>
-                <li class="footer__nav-about-item">
-                    <a class="footer__nav-about-item-link" href="production.html">О производстве</a>
-                </li>
-                <li class="footer__nav-about-item">
-                    <a class="footer__nav-about-item-link" href="documents.html">Наши документы</a>
-                </li>
-                <li class="footer__nav-about-item">
-                    <a class="footer__nav-about-item-link" href="ecology.html">Экологические стандарты</a>
-                </li>
-            </ul>
+        <footer class="main-footer">
+            <div class="footer__social">  
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a class="footer__social-item-btn" href="#">Twitter</a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-item-btn" href="#">Инстаграм</a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-item-btn" href="#">Вконтакте</a>
+                    </li>
+                    <li class="footer__social-item">
+                    <a class="footer__social-item-btn" href="#">Фейсбук</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__nav">
+                <ul class="footer__nav-about">
+                    <li class="footer__nav-about-item provider">
+                        <a class="footer__nav-about-item-link" href="vendors.html">Для поставщиков</a>
+                    </li>
+                    <li class="footer__nav-about-item">
+                        <a class="footer__nav-about-item-link" href="production.html">О производстве</a>
+                    </li>
+                    <li class="footer__nav-about-item">
+                        <a class="footer__nav-about-item-link" href="documents.html">Наши документы</a>
+                    </li>
+                    <li class="footer__nav-about-item">
+                        <a class="footer__nav-about-item-link" href="ecology.html">Экологические стандарты</a>
+                    </li>
+                </ul>
+            </div>
+
             <div class="footer__copyright">
-                <a class="academy-logo" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
-                </a>
+                <a class="academy-logo" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy"></a>
                 <span class="footer__copyright-text">Сделано в HTML Academy (С) 2017</span>
             </div>
         </footer>
