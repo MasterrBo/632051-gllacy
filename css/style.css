@@ -126,7 +126,7 @@ a {
     color: #ffbc9e; 
 }
 
-.footer__social {
+.footer__social-list {
     text-align: center;
 }
 
@@ -157,7 +157,8 @@ a {
 .modal__feedback,
 .modal-login, 
 .modal-search,
-.cart__list-block {
+.cart__list-block,
+.catalog__navigation {
     display: none;
 }
 
@@ -200,7 +201,7 @@ a {
     font-weight: 700;
 }
 
-.catalog-item__weight {
+.catalog-item__weight 
     font-size: 30px;
     line-height: 45px;
     font-weight: 700;
@@ -211,3 +212,210 @@ a {
     line-height: 22px;
     font-weight: 500;
 }
+
+/* ----- Сеточные стили ----- */
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 2415px;
+}
+
+}
+
+.main-header {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 8px;
+  margin-bottom: 30px;
+
+  /* Временно для сетки */
+  min-height: 64px;
+  background-color: #B49946;
+
+}
+
+.main-navigation {
+  display: flex;
+  width: 100%;
+  min-height: 64px;
+ /* Временно для сетки */
+ background-color: #B4467E;
+}
+
+.main-header-logo {
+  width: 154px;
+  height: 64px;
+  margin-left: 27px;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  min-width: 400px;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-left: 10px;
+
+  /* Временно для сетки */
+  min-height: 60px;
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
+  max-width: 270px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
+  list-style: none;
+  
+  /* Временно для сетки */
+  min-height: 20px;
+  background-color: #46B47E;
+}
+
+.main-header-logo {
+    background-color: #E2871D;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+
+   /* Временно для сетки */
+  margin-bottom: 50px;
+  min-height: 120px;
+  background-color: #847D75;
+}
+
+.main-header-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation-wrapper .main-header-container {
+  display: flex;
+  /*justify-content: space-between; */
+} 
+
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.advantages {
+  margin: 0;
+  margin-left: 27px;
+  margin-right: 27px;
+  padding: 25px 20px 25px 20px;
+
+ /* Временно для сетки */
+  min-height: 308px;
+  margin-bottom: 40px;
+  }
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item {
+  width: 560;
+
+
+    /* Временно для сетки */
+  min-height: 215px;
+}
+
+.header__contacts {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-preview,
+.mailing {
+    width: 560px;
+    padding: 20px 0 0 20px;
+}
+
+.blog-preview {
+  margin-left: 27px;
+  margin-right: 25px; 
+  /* Временно для сетки */
+  background-color: white;
+  min-height: 220px;
+}
+
+.mailing {
+    margin-right: 27px;
+    padding: 35px 27 27 27px;
+    min-height: 220px;
+}
+
+.map {
+    min-height: 430px;
+    margin-bottom: 40px; 
+}
+
+.main-footer {
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 100px;
+  padding: 18px 27px;
+}
+
+.footer__social-list {
+  width: 267px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: 27px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin-right: 125px;
+
+    /* Временно для сетки */
+  background-color: #847D75;
+  min-height: 40px;
+}
+
+.footer__copyright {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 267px;
+  margin-top: 13px;
+  margin-left: auto;
+
+    /* Временно для сетки */
+  min-height: 70px;
+}
+
+.footer__nav-about {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__container {
+  display: flex;
+  }
+
+
+
