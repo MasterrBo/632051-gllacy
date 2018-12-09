@@ -115,7 +115,7 @@ a {
 }
 
 .main-footer {
-    background-color: #849d8f; 
+    background-color: orange;
 }
 
 .main-footer a:active {
@@ -124,10 +124,6 @@ a {
 
 .main-footer a:hover { 
     color: #ffbc9e; 
-}
-
-.footer__social-list {
-    text-align: center;
 }
 
 .footer__social-item-btn {
@@ -201,7 +197,7 @@ a {
     font-weight: 700;
 }
 
-.catalog-item__weight 
+.catalog-item__weight {
     font-size: 30px;
     line-height: 45px;
     font-weight: 700;
@@ -213,140 +209,140 @@ a {
     font-weight: 500;
 }
 
-/* ----- Сеточные стили ----- */
+/* ----- СЕТОЧНЫЕ СТИЛИ ----- */
 
-html,
-body {
-  min-width: 1200px;
-  min-height: 2415px;
+page-container {
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 2415px;
 }
 
+.page-inner {
+    width: 1146px;
+    margin: 0 auto;
 }
 
 .main-header {
-  width: 1200px;
-  margin: 0 auto;
-  padding-top: 8px;
-  margin-bottom: 30px;
+    margin: 0 auto;
+    padding: 0;
+    width: 1200px;
+    margin-bottom: 30px;
 
-  /* Временно для сетки */
-  min-height: 64px;
-  background-color: #B49946;
+    /* Временно для сетки */
+    min-height: 64px;
+    /*background-color: #B49946; - временный цвет*/
+}
 
+.site-navigation a {
+    padding: 6px 13px;
+}
+
+.user-navigation a {
+  padding: 10px;
+}
+
+.catalog__navigation li {
+    margin: 0;
+    padding: 0;
 }
 
 .main-navigation {
-  display: flex;
-  width: 100%;
-  min-height: 64px;
- /* Временно для сетки */
- background-color: #B4467E;
+    display: flex;
+    width: 100%;
+    min-height: 64px;
+
+    /* Временно для сетки
+    background-color: #B4467E;*/
 }
 
 .main-header-logo {
-  width: 154px;
-  height: 64px;
-  margin-left: 27px;
+    padding-top: 8px;
+    width: 154px;
+    height: 64px;
+    margin-left: 27px;
 }
 
 .site-navigation {
-  margin: 0;
-  padding: 0;
-  min-width: 400px;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    padding-top: 30px;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-
-  margin-left: 10px;
-
-  /* Временно для сетки */
-  min-height: 60px;
+    /* Временно для сетки */
+    min-height: 60px;
+    min-width: 365px;
 }
 
 .user-navigation {
-  margin: 0;
-  padding: 0;
-  max-width: 270px;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    padding-top: 22px;
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
   
-  list-style: none;
-  
-  /* Временно для сетки */
-  min-height: 20px;
-  background-color: #46B47E;
+    /* Временно для сетки */
+    min-height: 20px;
+    max-width: 270px;
+    /*background-color: #46B47E;*/
 }
 
 .main-header-logo {
-    background-color: #E2871D;
+    /* Временно для сетки
+    background-color: #E2871D;*/
 }
 
-.main-navigation-wrapper {
-  width: 100%;
-
-   /* Временно для сетки */
-  margin-bottom: 50px;
-  min-height: 120px;
-  background-color: #847D75;
-}
-
-.main-header-container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-.main-navigation-wrapper .main-header-container {
-  display: flex;
-  /*justify-content: space-between; */
-} 
-
-  .container {
+.container {
     width: 1200px;
     margin: 0 auto;
     padding: 0;
 }
 
 .advantages {
-  margin: 0;
-  margin-left: 27px;
-  margin-right: 27px;
-  padding: 25px 20px 25px 20px;
+    margin: 0;
+    margin-left: 27px;
+    margin-right: 27px;
+    padding: 25px 20px 25px 20px;
 
- /* Временно для сетки */
-  min-height: 308px;
-  margin-bottom: 40px;
+    /* Временно для сетки */
+    min-height: 308px;
+    margin-bottom: 40px;
   }
 
 .advantages-list {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 
 .advantages-item {
-  width: 560;
-
+    width: 560;
 
     /* Временно для сетки */
-  min-height: 215px;
+    min-height: 215px;
 }
 
 .header__contacts {
-  display: flex;
-  justify-content: flex-end;
-  text-align: right;
+    display: flex;
+    justify-content: flex-end; /* разместим справа */
+    flex-wrap: wrap;
+    margin-right: 25px;
+    min-width: 180px;
+    display: none;
+}
+
+.header__contacts-tel {
+    padding-top: 8px;
 }
 
 .information {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .blog-preview,
@@ -356,11 +352,12 @@ body {
 }
 
 .blog-preview {
-  margin-left: 27px;
-  margin-right: 25px; 
-  /* Временно для сетки */
-  background-color: white;
-  min-height: 220px;
+    margin-left: 27px;
+    margin-right: 25px; 
+
+    /* Временно для сетки */
+    background-color: white;
+    min-height: 220px;
 }
 
 .mailing {
@@ -371,51 +368,48 @@ body {
 
 .map {
     min-height: 430px;
-    margin-bottom: 40px; 
+    margin: 0; 
+    padding: 0;
 }
 
 .main-footer {
-  width: 1200px;
-  margin: 0 auto;
-  min-height: 100px;
-  padding: 18px 27px;
+    margin: 0 auto;
+    min-height: 100px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer__social-list {
-  width: 267px;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-left: 27px;
-  display: flex;
-  justify-content: flex-start;
-  padding: 0;
-  margin-right: 125px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 267px;
+    margin-top: 35px;
 
     /* Временно для сетки */
-  background-color: #847D75;
-  min-height: 40px;
-}
-
-.footer__copyright {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  width: 267px;
-  margin-top: 13px;
-  margin-left: auto;
-
-    /* Временно для сетки */
-  min-height: 70px;
+    /*background-color: #847D75;*/
+    min-height: 40px;
 }
 
 .footer__nav-about {
-  display: flex;
-  justify-content: space-around;
-}
-
-.footer__container {
-  display: flex;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-top: 35px;
+    width: 350px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
   }
 
+.footer__nav-about a {
+    margin: 10px;
+}
 
-
+.footer__copyright {
+    margin-top: 17px;
+    width: 210px;
+    margin-bottom: 28px;
+    /* Временно для сетки */
+    min-height: 65px;
+}
