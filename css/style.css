@@ -11,6 +11,12 @@ body {
     background-repeat: no-repeat;
 }
 
+page-container {
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 2415px;
+}
+
 a {
     font-family: "Roboto", "PT Sans", sans-serif;
     color: #ffffff;
@@ -114,9 +120,7 @@ a {
     color: #e84d37; 
 }
 
-.main-footer {
-    background-color: orange;
-}
+
 
 .main-footer a:active {
     color: #ffbc9e;
@@ -211,12 +215,6 @@ a {
 
 /* ----- СЕТОЧНЫЕ СТИЛИ ----- */
 
-page-container {
-    width: 1200px;
-    margin: 0 auto;
-    min-height: 2415px;
-}
-
 .page-inner {
     width: 1146px;
     margin: 0 auto;
@@ -225,12 +223,11 @@ page-container {
 .main-header {
     margin: 0 auto;
     padding: 0;
-    width: 1200px;
+    width: 1146px;
     margin-bottom: 30px;
 
-    /* Временно для сетки */
-    min-height: 64px;
-    /*background-color: #B49946; - временный цвет*/
+    /* Временно для сетки
+    background-color: #FF4F18;*/
 }
 
 .site-navigation a {
@@ -269,11 +266,7 @@ page-container {
     display: flex;
     flex-wrap: wrap;
     margin-left: 10px;
-    padding-top: 30px;
-
-    /* Временно для сетки */
-    min-height: 60px;
-    min-width: 365px;
+    padding-top: 30px;   
 }
 
 .user-navigation {
@@ -296,7 +289,7 @@ page-container {
     background-color: #E2871D;*/
 }
 
-.container {
+ .container {
     width: 1200px;
     margin: 0 auto;
     padding: 0;
@@ -307,10 +300,6 @@ page-container {
     margin-left: 27px;
     margin-right: 27px;
     padding: 25px 20px 25px 20px;
-
-    /* Временно для сетки */
-    min-height: 308px;
-    margin-bottom: 40px;
   }
 
 .advantages-list {
@@ -322,9 +311,6 @@ page-container {
 
 .advantages-item {
     width: 560;
-
-    /* Временно для сетки */
-    min-height: 215px;
 }
 
 .header__contacts {
@@ -343,6 +329,7 @@ page-container {
 .information {
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
 .blog-preview,
@@ -357,7 +344,6 @@ page-container {
 
     /* Временно для сетки */
     background-color: white;
-    min-height: 220px;
 }
 
 .mailing {
@@ -378,6 +364,9 @@ page-container {
     padding: 0;
     display: flex;
     justify-content: space-between;
+
+  /* Временно для сетки 
+    background-color: orange;*/
 }
 
 .footer__social-list {
@@ -387,9 +376,8 @@ page-container {
     width: 267px;
     margin-top: 35px;
 
-    /* Временно для сетки */
-    /*background-color: #847D75;*/
-    min-height: 40px;
+    /* Временно для сетки
+    background-color: #847D75;*/
 }
 
 .footer__nav-about {
@@ -410,6 +398,44 @@ page-container {
     margin-top: 17px;
     width: 210px;
     margin-bottom: 28px;
-    /* Временно для сетки */
-    min-height: 65px;
 }
+
+   /* СЕТКА СТРАНИЦЫ КАТАЛОГА*/
+
+.breadcrumbs {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.catalog {
+     width: 1200px;
+     /* Временно для сетки
+     background-color: #B49946;*/
+}
+
+.catalog__title {
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-left: 27px;
+}
+
+.catalog-item {
+    width: 267px;
+    margin-bottom: 40px;
+    margin-right: 27px;
+    margin-left: 0;
+}
+
+.catalog-item:nth-child(4n) {
+    margin-right: 0;
+}
+
