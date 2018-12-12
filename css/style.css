@@ -14,7 +14,6 @@ body {
 page-container {
     width: 1200px;
     margin: 0 auto;
-    min-height: 2415px;
 }
 
 a {
@@ -246,9 +245,9 @@ a {
 .main-navigation {
     display: flex;
     width: 100%;
-    min-height: 64px;
-
+    
     /* Временно для сетки
+    min-height: 64px;
     background-color: #B4467E;*/
 }
 
@@ -279,7 +278,7 @@ a {
     margin-right: 25px;
   
     /* Временно для сетки */
-    min-height: 20px;
+    
     max-width: 270px;
     /*background-color: #46B47E;*/
 }
@@ -360,7 +359,6 @@ a {
 
 .main-footer {
     margin: 0 auto;
-    min-height: 100px;
     padding: 0;
     display: flex;
     justify-content: space-between;
