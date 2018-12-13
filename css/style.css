@@ -28,6 +28,8 @@ a {
 
 .list-unstyled {
     list-style: none;
+    padding: 0;
+    margin: 0
 }
 
 .main-navigation {
@@ -118,8 +120,6 @@ a {
 .blog-preview a:hover {
     color: #e84d37; 
 }
-
-
 
 .main-footer a:active {
     color: #ffbc9e;
@@ -247,7 +247,6 @@ a {
     width: 100%;
     
     /* Временно для сетки
-    min-height: 64px;
     background-color: #B4467E;*/
 }
 
@@ -256,6 +255,8 @@ a {
     width: 154px;
     height: 64px;
     margin-left: 27px;
+    /* Временно для сетки
+    background-color: #E2871D;*/
 }
 
 .site-navigation {
@@ -277,44 +278,32 @@ a {
     list-style: none;
     margin-right: 25px;
   
-    /* Временно для сетки */
-    
-    max-width: 270px;
-    /*background-color: #46B47E;*/
-}
-
-.main-header-logo {
     /* Временно для сетки
-    background-color: #E2871D;*/
+    background-color: #46B47E;*/
 }
 
  .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0;
 }
 
 .advantages {
-    margin: 0;
-    margin-left: 27px;
-    margin-right: 27px;
-    padding: 25px 20px 25px 20px;
+    margin: 0 27px;
+    padding: 25px 20px;
   }
 
 .advantages-list {
     display: flex;
     justify-content: space-between;
-    margin: 0;
-    padding: 0;
 }
 
 .advantages-item {
-    width: 560;
+    width: 560px;
 }
 
 .header__contacts {
     display: flex;
-    justify-content: flex-end; /* разместим справа */
+    justify-content: flex-end;
     flex-wrap: wrap;
     margin-right: 25px;
     min-width: 180px;
@@ -334,32 +323,27 @@ a {
 .blog-preview,
 .mailing {
     width: 560px;
-    padding: 20px 0 0 20px;
 }
 
 .blog-preview {
     margin-left: 27px;
     margin-right: 25px; 
-
-    /* Временно для сетки */
+    padding: 20px;
     background-color: white;
 }
 
 .mailing {
     margin-right: 27px;
-    padding: 35px 27 27 27px;
+    padding: 30px 27px 27px;
     min-height: 220px;
 }
 
 .map {
     min-height: 430px;
-    margin: 0; 
-    padding: 0;
 }
 
 .main-footer {
-    margin: 0 auto;
-    padding: 0;
+ 
     display: flex;
     justify-content: space-between;
 
@@ -368,11 +352,9 @@ a {
 }
 
 .footer__social-list {
-    padding: 0;
-    margin: 0;
     display: flex;
-    width: 267px;
-    margin-top: 35px;
+    margin-top: 28px;
+    margin-left: 27px;
 
     /* Временно для сетки
     background-color: #847D75;*/
@@ -380,8 +362,6 @@ a {
 
 .footer__nav-about {
     display: flex;
-    padding: 0;
-    margin: 0;
     margin-top: 35px;
     width: 350px;
     flex-wrap: wrap;
@@ -401,8 +381,6 @@ a {
    /* СЕТКА СТРАНИЦЫ КАТАЛОГА*/
 
 .breadcrumbs {
-    padding: 0;
-    margin: 0;
     margin-bottom: 10px;
 }
 
@@ -420,20 +398,30 @@ a {
 
 .catalog-list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
     margin-left: 27px;
 }
 
 .catalog-item {
     width: 267px;
     margin-bottom: 40px;
-    margin-right: 27px;
     margin-left: 0;
 }
 
 .catalog-item:nth-child(4n) {
     margin-right: 0;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
