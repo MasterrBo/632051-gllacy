@@ -312,10 +312,6 @@ a {
     color: #ffbc9e; 
 }
 
-.footer__social-item-btn {
-    color: #849d8f;
-}
-
 .footer__nav-about a {
     color: #fefefe;
     font-size: 13px;
@@ -909,40 +905,7 @@ advantages__icon-eskimo:before {
     background-repeat: no-repeat;
 }
 
-footer__social-item-btn  {
-  display: flex;
-   width: 40px;
-  height: 40px;
 
-  background-color: #e6ebe9;
-  align-items: center;
-  justify-content: center;
-
-
-  width: 32px;
-  height: 32px;
-  margin-right: 11px;
-
-  border: 3px solid rgba(255, 255, 255, 0.2);
-}
-
-footer__social-list ul{
-  display: flex;
-  width: 190px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.footer__social-list {
-    display: flex;
-    margin-top: 28px;
-    margin-left: 27px;
-
-    /* Временно для сетки
-    background-color: #847D75;*/
-}
 
 .button {
   padding: 11px 0;
@@ -1076,4 +1039,85 @@ footer__social-list ul{
   min-width: 75px;
   margin-right: -3px;
 }
- 
+
+/*СОЦ СЕТИ */ 
+
+footer__social-item-btn  {
+  /*display: flex;
+   width: 40px;
+  height: 40px;
+
+  background-color: #e6ebe9;
+  align-items: center;
+  justify-content: center;*/
+
+  width: 32px;
+  height: 32px;
+  margin-right: 11px;
+
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer__social-list {
+    display: flex;
+    margin-top: 28px;
+    margin-left: 27px;
+
+    /* Временно для сетки
+    background-color: #847D75;*/
+}
+
+footer__social-list ul {
+  display: flex;
+  width: 220px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a.button-tvit {
+  display: block;
+
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+a.button-insta {
+  display: block;
+
+  background-image: url("../img/instagram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+a.button-vk {
+  display: block;
+
+  background-image: url("../img/vkontakte.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+a.button-fb {
+  display: block;
+
+  background-image: url("../img/facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+
+
+
+
+
