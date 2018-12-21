@@ -54,7 +54,7 @@ a {
 }
 
 .login-link::before {
-  content: "";
+  content: " ";
 
   position: absolute;
   top: 8px;
@@ -90,8 +90,12 @@ a {
 
 .site-navigation a:hover, 
 .user-navigation a:hover {
-    background: #ffbed4; /* Цвет фона под ссылкой */ 
-    color: #323232; /* Цвет ссылки */ 
+    /*background: #ffbed4; Цвет фона под ссылкой */ 
+    color: #323232;
+    text-decoration: none;
+
+    background-color: #f7f6f3;
+    border-radius: 20px;
 }
 
 .site-navigation a:active,
@@ -139,12 +143,15 @@ a {
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
+     margin-bottom: 4px;
 }
 
 .header__contacts-tel {
     font-size: 22px;
     line-height: 24px;
     font-weight: 700;
+    margin: 0;
+
 }
 
 .slide__title {
@@ -177,7 +184,7 @@ a {
     background-repeat: no-repeat;
 
     min-height: 230px;
-    margin-left: 27px;
+    margin-left: 0;
 }
 
 .presents__choco {
@@ -204,17 +211,13 @@ a {
   margin-right: 1px;
 }
 
-
-.hits 
-
-
-
-
 .advantages h1 {
     font-size: 24px;
     line-height: 30px;
     font-weight: 500;
     color: #323232;
+    margin: 0;
+    padding: 0;
 }
 
 .advantages {
@@ -225,53 +228,62 @@ a {
     background-image: url("../img/waffle-background.png");
     background-color: #eee1c8;
     border-radius: 15px;
+    width: 1105px;
 
     margin-bottom: 42px;
-    margin-left: 27px;
-    padding-top: 6px;
-    padding-left: 21px;
+    margin-left: 0;
+    margin-right: 27px;
+    padding: 24px 20px;
 }
 
 .advantages-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    width: 1146px;
+    width: 1095px;
 }
 
-/*.advantages {
-    margin: 0 27px;
-    padding: 25px 20px;
-  }*/
-
-.advantages-item {
-    color: #323232;
-    font-weight: 400;
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 22px;
-    width: 550px;
+.advantages-list li {
+  position: relative;
+  width: 50%;
+  margin-bottom: 2px;
 }
 
-.advantages-left {
-  margin-left: 35px;
+.advantages-list p {
   margin: 0;
-  width: 478px;
+  margin-top: 20px;
+  padding-left: 56px;
+  padding-right: 10px;
 }
 
-.advantages-right {
-    margin: 0;
-    width: 475px;
-    margin-left: 16px;
+.advantages-list li::before{
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.presents {
-
+.advantages-list .first::before {
+  background-image: url("../img/eskimo-icon.png");
 }
 
+.advantages-list .second::before {
+  background-image: url("../img/caw-icon.png");
+}
 
+.advantages-list .third::before {
+  background-image: url("../img/leaf-icon.png");
+}
+
+.advantages-list .fourth::before {
+  background-image: url("../img/termometer.png");
+}
 
 .blog-preview-title {
     color: #323232;
@@ -430,8 +442,6 @@ a {
 .main-navigation {
     display: flex;
     width: 100%;
-
-    
     /* Временно для сетки
     background-color: #B4467E;*/
 }
@@ -473,14 +483,7 @@ a {
 .header__contacts {
     position: absolute;
     right: 30px;
-    text-align: right;
-    /*margin-right: 0px;
-    /*min-width: 180px;
-    display: none;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;*/
-    
+    text-align: right;   
 }
 
 .header__contacts-tel {
@@ -490,6 +493,8 @@ a {
 .information {
     display: flex;
     justify-content: space-between;
+    width: 1146px;
+    margin: 0 auto;
     margin-bottom: 49px;
 }
 
@@ -499,7 +504,7 @@ a {
 }
 
 .blog-preview {
-    margin-left: 27px;
+
     margin-right: 25px;
     min-height: 215px;
     padding-top: 5px;
@@ -534,6 +539,7 @@ a {
 
 .map {
     min-height: 430px;
+    width: 1200px;
 }
 
 .main-footer {
@@ -545,13 +551,13 @@ a {
     background-color: orange;*/
 }
 
-
 .footer__nav-about {
     display: flex;
     margin-top: 35px;
     width: 350px;
     flex-wrap: wrap;
     margin-bottom: 28px;
+    position: relative;
   }
 
 .footer__nav-about a {
@@ -590,7 +596,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 27px;
+    margin-left: 0;
 }
 
 .catalog-item {
@@ -621,6 +627,10 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation__current {
+   text-decoration: none;
+
+    background-color: #d07058;
+    border-radius: 20px;
 
 }
 
@@ -800,7 +810,7 @@ breadcrumbs-current {
 .filter-input input[type="radio"] + .radio-indicator {
     position: absolute;
 
-    top: 0px;
+    top: -1px;
     left: 10px;
     width: 22px;
     height: 22px;
@@ -898,14 +908,6 @@ breadcrumbs-current {
     background-image: url("../img/hit-icon.png");
     background-repeat: no-repeat;
 }
-
-advantages__icon-eskimo:before {
-    position: absolute;
-    background-image: url("../img/eskimo-icon.png");
-    background-repeat: no-repeat;
-}
-
-
 
 .button {
   padding: 11px 0;
@@ -1082,7 +1084,7 @@ a.button-tvit {
   background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 50%;
+  border-radius: 50%;сгк
   opacity: 0.7;
 }
 
@@ -1115,6 +1117,71 @@ a.button-fb {
   border-radius: 50%;
   opacity: 0.7;
 }
+
+.modal-show {
+  display: block;
+}
+
+.footer__provider-icon:before {
+  display: block;
+  content: " ";
+
+  position: absolute;
+  top: 6px;
+  left: -23px;
+
+  width: 15px;
+  height: 13px;
+
+  background-image: url("../img/heart.png");
+  background-repeat: no-repeat;
+}
+
+.entry-link:hover .modal-login {
+  display: block;
+}
+
+.login-form {
+  position: absolute;
+  right: -3px;
+  top: 45px;
+  z-index: 1;
+  display: none;
+  margin: 0;
+  padding: 20px;
+  border-radius: 5px;
+  list-style: none;
+  background: #f8f7f4;
+}
+
+.search-form:hover .modal-search {
+  display: block;
+}
+
+.modal-search {
+
+}
+
+.red-cart__link {
+  position: relative;
+  width: 92px;
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.red-cart__link:before,
+.red-cart__link:hover:before,
+.red-cart__link:focus:before {  
+  content: " ";
+
+  width: 21px;
+  height: 19px;
+
+  background-image: url("../img/basket-red.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
 
 
 

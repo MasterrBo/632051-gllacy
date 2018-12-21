@@ -54,7 +54,7 @@
                         <li class="button-navigation entry-link"><a class="login-link" href="#">Вход</a>
                             <div class="modal modal-login">
                                 <form class="modal__login-form" action="https://echo.htmlacademy.ru" method="post">
-                                    <input type="text" name="email" placeholder="Электронная почта">
+                                    <input class="login-icon-user" type="text" name="login" placeholder="Электронная почта">
                                     <input type="password" name="password" placeholder="Пароль">
                                     <button class="button login__button" type="submit">Войти</button>
                                     <div class="modal__registration">
@@ -64,8 +64,11 @@
                                 </form>
                             </div>
                         </li>
+
                         <li class="button-navigation empty-basket">
-                            <a href="#">Пусто</a>
+                            <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
+                            Пусто</a>
                         </li>
                     </ul>
                 </nav>
@@ -139,19 +142,19 @@
                             </li>
                             <li class="catalog-item catalog__hit-item">
                                 <a href="#"><img src="img/product-img/slivochnoe-2.jpg" width="267" height="267" alt="C кусочками шоколада" style="border-radius: 50%"></a>
-                                <p><b class="catalog-item__price">380 р</b><span class="catalog-item__weight">/кг</span></p>
+                                <p><b class="catalog-item__price">380 ₽</b><span class="catalog-item__weight">&nbsp;/кг</span></p>
                                 <a href="with-choco.html" class="catalog-item__link">Сливочно-кофейное с кусочками шоколада</a>
                                 <a class="button popup" href="#">Быстрый просмотр</a>
                             </li>
                             <li class="catalog-item catalog__hit-item">
                                 <a href="#"><img src="img/product-img/slivochnoe-3.jpg" width="267" height="267" alt="C присыпкой из белого шоколада" style="border-radius: 50%"></a>
-                                <p><b class="catalog-item__price">355 р</b><span class="catalog-item__weight">/кг</span></p>
+                                <p><b class="catalog-item__price">355 ₽</b><span class="catalog-item__weight">&nbsp;/кг</span></p>
                                 <a href="with-white-choco.html" class="catalog-item__link">Сливочно-клубничное с присыпкой из белого шоколада</a>
                                 <a class="button popup" href="#">Быстрый просмотр</a>
                             </li>
                             <li class="catalog-item catalog__hit-item">
                                 <a href="#"><img src="img/product-img/slivochnoe-4.jpg" width="267" height="267" alt="Сливочно-кофейное" style="border-radius: 50%"></a>
-                                <p><b class="catalog-item__price">415 р</b><span class="catalog-item__weight">/кг</span></p>
+                                <p><b class="catalog-item__price">415 ₽</b><span class="catalog-item__weight">&nbsp;/кг</span></p>
                                 <a href="with-caramel.html" class="catalog-item__link">Сливочное крем-брюле с карамельной подливкой</a>
                                 <a class="button popup" href="#">Быстрый просмотр</a> 
                             </li>
@@ -161,18 +164,18 @@
                     <section class="advantages">
                         <h1>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
                         <ul class="advantages-list list-unstyled">
-                            <li class="advantages-item advantages__icon-eskimo">
+                            <li class="advantages-item first">
                                 <p class="advantages-left">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
                             </li>
-                            <li class="advantages-item">
+                            <li class="advantages-item second">
                                 <p class="advantages-right">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
                             </li>
 
-                            <li class="advantages-item">
+                            <li class="advantages-item third">
                                 <p class="advantages-left">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
                             </li>
                             
-                            <li class="advantages-item">
+                            <li class="advantages-item fourth">
                                 <p class="advantages-right">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
                             </li>
                         </ul>
@@ -201,7 +204,7 @@
             <div>
                 <!-- Идет блок с картой, которую пока делать не надо --> 
                 <div class="map">
-                    <p>Карта</p>
+                    <img src="img/map.jpg" width="1200" height="430" alt="карта как добраться">
                 </div>
             </div>
             </main>            
@@ -223,8 +226,8 @@
                     </ul>
 
                 <ul class="footer__nav-about list-unstyled">
-                    <li class="footer__nav-about-item provider">
-                        <a class="footer__nav-about-item-link" href="vendors.html">Для поставщиков</a>
+                    <li class="footer__nav-about-item footer__provider-icon">
+                        <a class="footer__nav-about-item-link " href="vendors.html">Для поставщиков</a>
                     </li>
                     <li class="footer__nav-about-item">
                         <a class="footer__nav-about-item-link" href="production.html">О производстве</a>
@@ -238,7 +241,7 @@
                 </ul>
 
                 <div class="footer__copyright">
-                    <a class="academy-logo" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy"></a>
+                    <a class="academy-logo" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy-small.png" width="108" height="39" alt="Логотип HTML Academy"></a>
                     <p class="footer__copyright-text">Сделано в HTML Academy &copy; 2017</p>
                 </div>
             </footer>
@@ -255,6 +258,57 @@
             </div>
         </div>
         </div> 
+
+        <script>
+            var link = document.querySelector(".login-link");
+
+            var popup = document.querySelector(".modal-login");
+
+            var form = popup.querySelector("form");
+            var login = popup.querySelector("[name=login]");
+            var password = popup.querySelector("[name=password]");
+
+            var isStorageSupport = true;
+            var storage = "";
+  
+            try {
+                storage = localStorage.getItem("login");
+            } catch (err) {
+                isStorageSupport = false;
+            }
+           
+            link.addEventListener("click", function (evt) {
+                evt.preventDefault();
+                popup.classList.add("modal-show");
+
+                if (storage) {
+                    login.value = storage;
+                    password.focus();
+                } else {
+                    login.focus();
+                }   
+            });
+
+            form.addEventListener("submit", function (evt) {
+                if (!login.value || !password.value) {
+                  evt.preventDefault();
+                  console.log("Нужно ввести логин и пароль");
+                    } else {
+                        if (isStorageSupport) {
+                        localStorage.setItem("login", login.value);
+                    }
+                }
+            });
+
+            window.addEventListener("keydown", function (evt) {
+                if (evt.keyCode === 27) {
+                    evt.preventDefault();
+                    if (popup.classList.contains("modal-show")) {
+                    popup.classList.remove("modal-show");
+                  }
+                }
+              });           
+        </script>
     </body>
 </html>
 
