@@ -9,27 +9,27 @@
     </head>
     <body>
         <div class=page-container>
-            <header class="main-header page-inner">
+            <header class="main-header">
                 <nav class="main-navigation">
                     <a class="main-header-logo" href="index.html">
                         <img src="img/logo2.svg" width="154" height="64" alt="Логотип магазина Gllacy">
                     </a>
                     <ul class="site-navigation list-unstyled">
                         <li>
-                            <a class="site-navigation__current" href="catalog.html">Каталог</a>
+                            <a class="site-navigation__current" href="#">Каталог</a>
                             <ul class="catalog__navigation list-unstyled">
-                                <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Новинки</a></li>
-                                <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Сливочное</a></li>
-                                <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Щербеты</a></li>
-                                <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Фруктовый лед</a></li>
-                                <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Мелорин</a></li>
+                                <li class="catalog__navigation-list"><a class="catalog__navigation-link-new">Новинки</a></li>
+                                <li><a href="catalog.html" class="catalog__navigation-link">Сливочное</a></li>
+                                <li><a href="#" class="catalog__navigation-link">Щербеты</a></li>
+                                <li><a href="#" class="catalog__navigation-link">Фруктовый лед</a></li>
+                                <li><a href="#" class="catalog__navigation-link">Мелорин</a></li>
                             </ul>
                         </li>
                         <li><a href="delivery.html">Доставка и оплата</a></li>
                         <li><a href="about.html">О компании</a></li>
                     </ul>
                     <ul class="user-navigation list-unstyled">
-                            <li class="button-navigation search-form">
+                        <li class="button-navigation search-form">
                             <a class="search-link" href="#"><span class="visually-hidden">Поиск</span>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
                             <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
@@ -38,17 +38,22 @@
                             <div class="modal modal-search">
                                 <h2 class="visually-hidden">Форма поиска</h2>
                                 <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
-                                    <label class="visually-hidden">Строка поиска
-                                    <input type="search" name="search" placeholder="Что ищем?"></label>
+                                    <label for="search" class="visually-hidden">Строка поиска</label>
+                                    <input type="search"  class="input-search" id="search" name="search" placeholder="Что ищем?">
                                 </form>
                             </div>
                         </li>   
-                        <li class="button-navigation entry-link"><a href="entry.html">Вход</a>
+                        <li class="button-navigation entry-link"><a class="login-link" href="#">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
+                            <polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959"/>
+                            <path fill="#FFFFFF" d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"/>
+                            </svg>Вход</a>
+
                             <div class="modal modal-login">
                                 <form class="modal__login-form" action="https://echo.htmlacademy.ru" method="post">
                                     <input type="text" name="email" placeholder="Электронная почта">
                                     <input type="password" name="password" placeholder="Пароль">
-                                    <button class="button login__button" type="submit">Войти</button>
+                                    <button class="button btn login__button" type="submit">Войти</button>
                                     <div class="modal__registration">
                                         <a class="modal__registration-link" href="#">Забыли пароль?</a>
                                         <a class="modal__registration-link" href="#">Новая регистрация</a>
@@ -59,52 +64,65 @@
                         <li class="button-navigation cart__list">
                             <a class="cart__link red-cart__link" href="#">2 товара</a>
                             <div class="cart__list-block">
-                                <table class="cart__list-content">
+                                <table class="cart__list-table">
                                     <tr>
                                         <td>
-                                            <button class="cart__list-delete" type="button"><span class="visually-hidden">Удалить из корзины</span></button>
+                                            <button class="cart__list-delete btn" type="button"><span class="visually-hidden">Удалить из корзины</span></button>
                                         </td>
                                         <td>
                                             <img src="img/product-img/slivochnoe-1.jpg" width="32" height="32" alt="Пломбир с апельсиновым джемом">
-                                            <a class="cart__list-item-title">Пломбир с апельсиновым джемом</a>
                                         </td>
-                                        <td>
-                                            <span class="cart__list-item-cost">1,5 кг x 200 руб</span>
+                                        <td class="cart__list-item-title">
+                                            <p>Пломбир с апельсиновым джемом</p>
                                         </td>
-                                        <td>
-                                            <span class="cart__list-item-price">300 руб</span>
+                                        <td class="cart__list-item-weight">
+                                            <span>1,5 кг x </span>
+                                        </td>
+                                        <td class="cart__list-cost-kilo">
+                                            <span>200 руб.</span>
+                                        </td>
+                                        <td class="cart__list-sum">
+                                            <span>300 руб</span>
                                         <td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <button class="cart__list-delete" type="button"><span class="visually-hidden">Удалить из корзины</span></button>
+                                            <button class="cart__list-delete btn" type="button"><span class="visually-hidden">Удалить из корзины</span></button>
                                         </td>
                                         <td>
                                             <img src="img/product-img/slivochnoe-3.jpg" width="32" height="32" alt="Пломбир из белого шоколада">
-                                            <a class="cart__list-item-title">Клубничный пломбир с присыпкой из белого шоколада</a>
                                         </td>
-                                        <td>
-                                            <span class="cart__list-item-cost">1,5 кг x 300 руб</span>
+                                        <td class="cart__list-item-title">
+                                            <p>Клубничный пломбир с присыпкой из белого шоколада</p>
                                         </td>
-                                        <td>
-                                            <span class="cart__list-item-price">450 руб</span>
-                                        <td>
+                                        <td class="cart__list-item-weight">
+                                            <span>1,5 кг x </span>
+                                        </td>
+                                        <td class="cart__list-cost-kilo">
+                                            <span>300 руб.</span>
+                                        </td>
+                                        <td class="cart__list-sum">
+                                            <span>450 руб</span>
+                                        </td>
                                     </tr>                            
                                 </table>
-                                <p class="cart__list-total">Итого: 750 руб</p>
+                                <hr>
+                                <span class="cart__list-total-sum">Итого: 750 руб</span><br>
                                 <a class="button cart__list-button" href="#">Оформить заказ</a>
                             </div>
                         </li>                       
                     </ul>               
                 </nav>
+            </header>
 
-                <div class="header__contacts page-inner">
+                <div class="header__contacts container">
                     <p class="header__contacts-text">
                         С 10 до 20, ежедневно</p>
                     <p class="header__contacts-tel"> 
                         8 812 450-25-25
                     </p>
                 </div>          
+        
 
         <main class="container page-inner">
             <div class="breadcrumbs-wrapper">
@@ -114,7 +132,7 @@
                     </li>
                     <li>&raquo;</li>
                     <li class="breadcrumbs-item">
-                        <a class="breadcrumbs-item-link" href="catalog.html">Каталог</a>
+                        <a class="breadcrumbs-item-link" href="#">Каталог</a>
                     </li>
                     <li>&raquo;</li>
                     <li class="breadcrumbs-item breadcrumbs-current">Сливочное</li>
@@ -123,7 +141,7 @@
      
             <h1 class ="catalog__title">Сливочное мороженое</h1>
 
-                <!-- блок с фильтрами, в процессе -->
+                <!-- блок с фильтрами -->
                 <section class="filters">
                     <h2 class="visually-hidden">Фильтр товаров</h2>
                     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -235,7 +253,7 @@
                 </section>
 
 
-                <section class="catalog">
+                <section class="catalog page-inner">
                     <h2 class="visually-hidden">Виды сливочного мороженого</h2>
                     <ul class="catalog-list list-unstyled">
                         <li class="catalog-item">
@@ -313,7 +331,7 @@
                     </ul>
                 </section>
                         <ul class="pagination-list list-unstyled">
-                            <li class="pagination__item"><a href="#">&lt;</a></li>
+                            <li class="pagination__item disabled"><a href="#">&lt;</a></li>
                             <li class="pagination__item pagination__item-current">
                                 <a class="pagination__item-link" href="#">1</a>
                             </li>
@@ -329,36 +347,38 @@
                             <li class="pagination__item">
                                 <a class="pagination__item-link" href="#">5</a>
                             </li>
-                            <li class="pagination__item"><a href="#">&lt;</a></li>
+                            <li class="pagination__item"><a href="#" class="next_page">&gt;</a></li>
                         </ul>
                         <hr class="pagination__line">
             </main>
 
             <footer class="main-footer page-inner">
-                <ul class="footer__social-list list-unstyled">
-                    <li class="footer__social-item">
-                        <a class="footer__social-item-btn" href="#">Twitter</a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a class="footer__social-item-btn" href="#">Инстаграм</a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a class="footer__social-item-btn" href="#">Вконтакте</a>
-                    </li>
-                    <li class="footer__social-item">
-                    <a class="footer__social-item-btn" href="#">Фейсбук</a>
-                    </li>
-                </ul>
+                <div class="footer__social">
+                    <ul class="footer__social-list list-unstyled">
+                        <li class="footer__social-item">
+                            <a class="footer__social-item-btn button-tvit" href="#"><span class="visually-hidden">Twitter</span></a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-item-btn button-insta" href="#"><span class="visually-hidden">Инстаграм</span></a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-item-btn button-vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
+                        </li>
+                        <li class="footer__social-item">
+                        <a class="footer__social-item-btn button-fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+                        </li>
+                    </ul>
+                </div>
 
                 <ul class="footer__nav-about list-unstyled">
-                    <li class="footer__nav-about-item footer__provider-iconcurrent">
+                    <li class="footer__nav-about-item footer__provider-icon">
                         <a class="footer__nav-about-item-link" href="vendors.html">Для поставщиков</a>
                     </li>
                     <li class="footer__nav-about-item">
-                        <a class="footer__nav-about-item-link" href="production.html">О производстве</a>
+                        <a class="footer__nav-about-item-link" href="production.html">Наши документы</a>
                     </li>
                     <li class="footer__nav-about-item">
-                        <a class="footer__nav-about-item-link" href="documents.html">Наши документы</a>
+                        <a class="footer__nav-about-item-link" href="documents.html">О производстве</a>
                     </li>
                     <li class="footer__nav-about-item">
                         <a class="footer__nav-about-item-link" href="ecology.html">Экологические стандарты</a>
@@ -366,63 +386,11 @@
                 </ul>
 
                 <div class="footer__copyright">
-                    <a class="academy-logo" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy-small.png" width="108" height="39" alt="Логотип HTML Academy"></a>
-                    <p class="footer__copyright-text">Сделано в HTML Academy &copy; 2017</p>
+                    <a class="academy-logo" href="https://htmlacademy.ru" target="_blank"><img src="img/logo-htmlacademy-small.png" width="108" height="39" alt="Логотип HTML Academy"></a>
+                    <p class="footer__copyright-text">Сделано в <a class="copyright" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
                 </div>
             </footer>
-        </div>
-
-                <script>
-            var link = document.querySelector(".login-link");
-
-            var popup = document.querySelector(".modal-login");
-
-            var form = popup.querySelector("form");
-            var login = popup.querySelector("[name=login]");
-            var password = popup.querySelector("[name=password]");
-
-            var isStorageSupport = true;
-            var storage = "";
-  
-            try {
-                storage = localStorage.getItem("login");
-            } catch (err) {
-                isStorageSupport = false;
-            }
-           
-            link.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                popup.classList.add("modal-show");
-
-                if (storage) {
-                    login.value = storage;
-                    password.focus();
-                } else {
-                    login.focus();
-                }   
-            });
-
-            form.addEventListener("submit", function (evt) {
-                if (!login.value || !password.value) {
-                  evt.preventDefault();
-                  console.log("Нужно ввести логин и пароль");
-                    } else {
-                        if (isStorageSupport) {
-                        localStorage.setItem("login", login.value);
-                    }
-                }
-            });
-
-            window.addEventListener("keydown", function (evt) {
-                if (evt.keyCode === 27) {
-                    evt.preventDefault();
-                    if (popup.classList.contains("modal-show")) {
-                    popup.classList.remove("modal-show");
-                  }
-                }
-              });           
-        </script>
-
+        </div>    
     </body>
 </html>
 

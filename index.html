@@ -13,74 +13,75 @@
         <input class="visually-hidden" type="radio" id="product-3" name="toggle">
 
         <div class="site-wrapper">
+            <div class=page-container>
+            	<header class="main-header">
+                    <nav class="main-navigation">
+                    	<a class="main-header-logo">
+                    		<img src="img/logo2.svg" width="154" height="64" alt="Логотип магазина Gllacy">
+                    	</a>
 
-        <div class=page-container>
-        	<header class="main-header page-inner">
-                <nav class="main-navigation">
-                	<a class="main-header-logo">
-                		<img src="img/logo2.svg" width="154" height="64" alt="Логотип магазина Gllacy">
-                	</a>
-
-                    <ul class="site-navigation list-unstyled">
-                        <li>
-                            <a href="catalog.html">Каталог</a>
-                            <ul class="catalog__navigation list-unstyled">
-                                <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Новинки</a></li>
-                                <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Сливочное</a></li>
-                                <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Щербеты</a></li>
-                                <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Фруктовый лед</a></li>
-                                <li class="catalog__navigation-list"><a href="#" class="catalog__navigation-link">Мелорин</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="delivery.html">Доставка и оплата</a></li>
-                        <li><a href="about.html">О компании</a></li>
-                    </ul>
+                        <ul class="site-navigation list-unstyled">
+                            <li>
+                                <a href="#">Каталог</a>
+                                <ul class="catalog__navigation list-unstyled">
+                                    <li class="catalog__navigation-list"><a class="catalog__navigation-link-new">Новинки</a></li>
+                                    <li><a href="catalog.html" class="catalog__navigation-link">Сливочное</a></li>
+                                    <li><a href="#" class="catalog__navigation-link">Щербеты</a></li>
+                                    <li><a href="#" class="catalog__navigation-link">Фруктовый лед</a></li>
+                                    <li><a href="#" class="catalog__navigation-link">Мелорин</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="delivery.html">Доставка и оплата</a></li>
+                            <li><a href="about.html">О компании</a></li>
+                        </ul>
                     
-                    <ul class="user-navigation list-unstyled">
-                        <li class="button-navigation search-form">
-                            <a class="search-link" href="#"><span class="visually-hidden">Поиск</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
-                            <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
-                            </a>
+                        <ul class="user-navigation list-unstyled">
+                            <li class="button-navigation search-form">
+                                <a class="search-link" href="#"><span class="visually-hidden">Поиск</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+                                <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+                                </a>
 
-                            <div class="modal modal-search">
-                                <h2 class="visually-hidden">Форма поиска</h2>
-                                <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
-                                    <label class="visually-hidden">Строка поиска
-                                    <input type="search" name="search" placeholder="Что ищем?"></label>
-                                </form>
-                            </div> 
-                        </li>   
-                        <li class="button-navigation entry-link"><a class="login-link" href="#">Вход</a>
-                            <div class="modal modal-login">
-                                <form class="modal__login-form" action="https://echo.htmlacademy.ru" method="post">
-                                    <input class="login-icon-user" type="text" name="login" placeholder="Электронная почта">
-                                    <input type="password" name="password" placeholder="Пароль">
-                                    <button class="button login__button" type="submit">Войти</button>
-                                    <div class="modal__registration">
-                                        <a class="modal__registration-link" href="#">Забыли пароль?</a>
-                                        <a class="modal__registration-link" href="#">Новая регистрация</a>
-                                    </div>
-                                </form>
-                            </div>
-                        </li>
+                                <div class="modal modal-search">
+                                    <h2 class="visually-hidden">Форма поиска</h2>
+                                    <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+                                        <label for="search" class="visually-hidden">Строка поиска</label>
+                                        <input type="search"  class="input-search" id="search" name="search" placeholder="Что ищем?">
+                                    </form>
+                                </div> 
+                            </li>   
+                            <li class="button-navigation entry-link"><a class="login-link" href="#">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
+                                <polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959"/>
+                                <path fill="#FFFFFF" d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"/>
+                                </svg>Вход</a>
 
-                        <li class="button-navigation empty-basket">
-                            <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
-                            Пусто</a>
-                        </li>
-                    </ul>
-                </nav>
+                                <div class="modal modal-login">
+                                    <form class="modal__login-form" action="https://echo.htmlacademy.ru" method="post">
+                                        <input class="login-icon-user" type="text" name="login" placeholder="Электронная почта">
+                                        <input type="password" name="password" placeholder="Пароль">
+                                        <button class="button btn login__button" type="submit">Войти</button>
+                                        <div class="modal__registration">
+                                            <a class="modal__registration-link" href="#">Забыли пароль?</a>
+                                            <a class="modal__registration-link" href="#">Новая регистрация</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
 
-                <div class="header__contacts page-inner">
-                    <p class="header__contacts-text">
-                        С 10 до 20, ежедневно</p>
-                    <p class="header__contacts-tel"> 
-                        8 812 450-25-25
-                    </p>
-                </div>             
-            </header>
+                            <li class="button-navigation empty-basket">
+                                <a class="cart__link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
+                                Пусто</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__contacts page-inner">
+                        <p class="header__contacts-text">С 10 до 20, ежедневно</p>
+                        <p class="header__contacts-tel">8 812 450-25-25</p>
+                    </div>             
+                </header>
 
         	<main class="container">
                 
@@ -132,7 +133,7 @@
 
 
                     <section class="hits">
-                        <h2 class="visually-hidden">Хиты</h2>
+                        <h2 class="visually-hidden">Хиты продаж</h2>
                         <ul class="catalog-list list-unstyled">
                             <li class="catalog-item catalog__hit-item">
                                 <a href="#"><img src="img/product-img/slivochnoe-1.jpg" width="267" height="267" alt="С апельсиновым джемом" style="border-radius: 50%"></a>
@@ -184,32 +185,55 @@
         	        <section class="information">
                         <div class="blog-preview">
                             <p class="blog-preview-title">Новое в нашем блоге</p>
-                                <a href="10-sposobov-servirovki.html">10 способов сервировки<br> 
-                                фруктовых щербетов к<br> 
-                                столу</a>
+                            <p class="blog-preview-link"><a href="10-sposobov-servirovki.html">10 способов сервировки фруктовых щербетов к столу</a></p>
                         </div>  
                         <div class="mailing">
                             <div class="mailing-сontent">
                                 <p class="mailing-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+
                                 <form class="modal__mailing-form" action="https://echo.htmlacademy.ru" method="post">
-                                    <!-- не проходит валидацию <label for="mailing__input" class="visually-hidden">Электронная почта</label> -->
-                                    <input class="mailing__input" type="email" id="mailing__user-mail" name="user-email" placeholder="Электронная почта">
-                                    <button class="button button-send" type="submit">Отправить</button>
+                                    <label for="mailing__input" class="visually-hidden">Электронная почта</label> 
+                                    <input class="mailing__input" type="email" id="mailing__input" name="email" placeholder="Электронная почта">
+                                    <button class="button btn button-send" type="submit">Отправить</button>
                                 </form>
                             </div>
                         </div>
                 	</section>
-                </div> 
-
-            <div>
-                <!-- Идет блок с картой, которую пока делать не надо --> 
-                <div class="map">
-                    <img src="img/map.jpg" width="1200" height="430" alt="карта как добраться">
                 </div>
-            </div>
+
+                <section class="address-form">
+                    <h2 class="visually-hidden">Как нас найти</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.7514602793945!2d30.321795239149044!3d59.93874973879805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1546969291154" width="1200" height="430" style="border:0;" allowfullscreen></iframe>
+                    <img src="img/map.jpg" width="1200" height="430" alt="Карта как добраться">
+                    
+                    <div class="address-block">
+                        <h3 class="address__title">Адрес главного офиса и офлайн-магазина:</h3>
+                        <address class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
+                        <span class="address__text">Для заказов по телефону:</span><br>
+                        <span class="address__phone">8&nbsp;812 450-25-25</span><br>
+                        <span class="address__hours">(с 10 до 20 ежедневно)</span>
+                        <button class="button btn feedback-button">Форма обратной связи</button>
+                    </div>
+                </section>
+
+                <section class="modal modal__feedback">
+                    <h3 class="modal__feedback-title">Мы обязательно вам ответим!</h3>
+                    <button class="button-close btn" type="button"><span class="visually-hidden">Закрыть</span></button>
+                    <form class="modal__feedback-form" action="https://echo.htmlacademy.ru" method="post">
+                        <label for="user-name" class="visually-hidden">Имя</label>
+                        <input type="text" name="user-name" id="user-name" placeholder="Как вас зовут?">
+                        <label for="user-email" class="visually-hidden">Электронная почта</label>
+                        <input type="email" id="user-email" name="user-email" placeholder="Ваша почта для ответа?">
+                        <label for="user-comments" class="visually-hidden">Сообщение или вопрос</label>
+                        <textarea rows="7" name="comments" id="user-comments" placeholder="Напишите что-нибудь..."></textarea>
+                        <button class="button btn feedback-send" type="submit">Отправить</button>
+                    </form>
+                </section> 
+
             </main>            
 
             <footer class="main-footer page-inner">
+                <div class="footer__social">
                     <ul class="footer__social-list list-unstyled">
                         <li class="footer__social-item">
                             <a class="footer__social-item-btn button-tvit" href="#"><span class="visually-hidden">Twitter</span></a>
@@ -224,16 +248,17 @@
                         <a class="footer__social-item-btn button-fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
                         </li>
                     </ul>
+                </div>
 
                 <ul class="footer__nav-about list-unstyled">
                     <li class="footer__nav-about-item footer__provider-icon">
-                        <a class="footer__nav-about-item-link " href="vendors.html">Для поставщиков</a>
+                        <a class="footer__nav-about-item-link" href="vendors.html">Для поставщиков</a>
                     </li>
                     <li class="footer__nav-about-item">
-                        <a class="footer__nav-about-item-link" href="production.html">О производстве</a>
+                        <a class="footer__nav-about-item-link" href="production.html">Наши документы</a>
                     </li>
                     <li class="footer__nav-about-item">
-                        <a class="footer__nav-about-item-link" href="documents.html">Наши документы</a>
+                        <a class="footer__nav-about-item-link" href="documents.html">О производстве</a>
                     </li>
                     <li class="footer__nav-about-item">
                         <a class="footer__nav-about-item-link" href="ecology.html">Экологические стандарты</a>
@@ -241,74 +266,15 @@
                 </ul>
 
                 <div class="footer__copyright">
-                    <a class="academy-logo" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy-small.png" width="108" height="39" alt="Логотип HTML Academy"></a>
-                    <p class="footer__copyright-text">Сделано в HTML Academy &copy; 2017</p>
+                    <a class="academy-logo" href="https://htmlacademy.ru" target="_blank"><img src="img/logo-htmlacademy-small.png" width="108" height="39" alt="Логотип HTML Academy"></a>
+                    <p class="footer__copyright-text">Сделано в <a class="copyright" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
                 </div>
             </footer>
-
-            <div class="modal__feedback">
-                Мы обязательно вам ответим!
-                <button class="button button-close" type="button">Х</button>
-                <form class="modal__feedback-form" action="https://echo.htmlacademy.ru" method="post">
-                    <input class="feedback__input" id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
-                    <input class="feedback__input" id="user-email" type="text" name="user-email" placeholder="Ваша почта для ответа?">
-                    <textarea name="comments" placeholder="Напишите что-нибудь..."></textarea>
-                    <button class="button button-send" type="submit">Отправить</button>
-                </form>
-            </div>
+  
         </div>
         </div> 
 
-        <script>
-            var link = document.querySelector(".login-link");
-
-            var popup = document.querySelector(".modal-login");
-
-            var form = popup.querySelector("form");
-            var login = popup.querySelector("[name=login]");
-            var password = popup.querySelector("[name=password]");
-
-            var isStorageSupport = true;
-            var storage = "";
-  
-            try {
-                storage = localStorage.getItem("login");
-            } catch (err) {
-                isStorageSupport = false;
-            }
-           
-            link.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                popup.classList.add("modal-show");
-
-                if (storage) {
-                    login.value = storage;
-                    password.focus();
-                } else {
-                    login.focus();
-                }   
-            });
-
-            form.addEventListener("submit", function (evt) {
-                if (!login.value || !password.value) {
-                  evt.preventDefault();
-                  console.log("Нужно ввести логин и пароль");
-                    } else {
-                        if (isStorageSupport) {
-                        localStorage.setItem("login", login.value);
-                    }
-                }
-            });
-
-            window.addEventListener("keydown", function (evt) {
-                if (evt.keyCode === 27) {
-                    evt.preventDefault();
-                    if (popup.classList.contains("modal-show")) {
-                    popup.classList.remove("modal-show");
-                  }
-                }
-              });           
-        </script>
+        <script src="js/mini-js.js"></script>
     </body>
 </html>
 
