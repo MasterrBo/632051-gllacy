@@ -88,7 +88,7 @@ a {
 
     display: none;
     width: 342px;
-    min-height: 85px;
+   
     background: #f8f7f4;
     border-radius: 10px;
     -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -272,7 +272,7 @@ a {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    width: 1095px;
+    width: 1106px;
 }
 
 .advantages-list li {
@@ -284,6 +284,7 @@ a {
 .advantages-right {
     margin: 0;
     padding: 0;
+    padding-right: 0;
 }
 
 .advantages-list p {
@@ -291,6 +292,11 @@ a {
     margin-top: 20px;
     padding-left: 56px;
     padding-right: 10px;
+}
+
+.second p,
+.fourth p {
+  padding-left: 70px;
 }
 
 .advantages-list li::before {
@@ -310,6 +316,7 @@ a {
 }
 
 .advantages-list .second::before {
+    left: 12px;
     background-image: url("../img/cow.svg");
 }
 
@@ -318,6 +325,7 @@ a {
 }
 
 .advantages-list .fourth::before {
+    left: 12px;
     background-image: url("../img/thermometer.svg");
 }
 
@@ -370,7 +378,7 @@ a {
 
 .footer__copyright {
     color: #fefefe;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 18px;
     font-weight: 400;
 }
@@ -422,9 +430,11 @@ a {
 .catalog-item__price {
     position: absolute;
     bottom: 80px;
+    top: 209px;
     font-size: 45px;
     line-height: 45px;
     font-weight: 700;
+
 }
 
 /* ----- СЕТОЧНЫЕ СТИЛИ ----- */
@@ -565,18 +575,11 @@ a {
     justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
+   padding-bottom: 30px;
 }
 
 .inner-footer {
     border-top: 1px solid rgba(255,255,255,0.5);
-}
-
-.line {
-    border-top: 1px solid rgba(255,255,255,0.5);
-    width: 1146px;
-    margin-bottom: 22px;
-    margin-right: 27px;
-    margin-left: 27px;
 }
 
 .footer__nav-about {
@@ -700,6 +703,7 @@ input[type="radio"].visually-hidden {
     font-size: 30px;
     line-height: 45px;
     font-weight: 700;
+    top: 213px;
 }
 
 .catalog-item:hover:before {
@@ -763,7 +767,7 @@ input[type="radio"].visually-hidden {
 
 .sorting-name {
     margin-bottom: 6px;
-    padding-left: 16px;
+    padding-left: 0px;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -775,7 +779,7 @@ input[type="radio"].visually-hidden {
     padding-left: 14px;
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.2);
-    background-image: url("../img/icon-down-dir.svg");
+    background-image: url("../img/icon-down-dir.png");
     background-repeat: no-repeat;
     background-position: 91% 50%;
     border: none;
@@ -851,7 +855,7 @@ input[type="radio"].visually-hidden {
 
 .filter-input {
     position: relative;
-    padding-left: 41px;
+    padding-left: 40px;
     cursor: pointer;
 }
 
@@ -927,6 +931,7 @@ input[type="radio"].visually-hidden {
     margin-top: 46px;
     margin-right: 0px;
     margin-bottom: 29px;
+    padding: 0;
 }
 
 .pagination__item {
@@ -1460,7 +1465,7 @@ a.button-fb {
     display: none;
 
     width: 239px;
-    min-height: 174px;
+    
     padding: 20px 19px;
     background-color: #f8f7f4;
     border-radius: 5px;
@@ -1504,12 +1509,17 @@ a.button-fb {
     width: 100px;
     height: 44px;
     border-radius: 20px;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .modal__registration {
     position: absolute;
     right: 19px;
     bottom: 24px;
+    margin: 0;
+    padding: 0;
+    padding-top: 0px;
 
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -1546,6 +1556,10 @@ a.button-fb {
     text-decoration: underline;
 }
 
+.modal__registration-link {  
+  
+}
+
 .button-navigation .cart__link {
     min-width: 75px;
     margin-right: 27px;
@@ -1571,15 +1585,7 @@ a.button-fb {
     padding: 0;
 }
 
-.button-send {
-    width: 126px;
-    height: 41px;
-    margin-top: -6px;
-    margin-left: 8px;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
-}
+
 
 .mailing__input {
     width: 368px;
@@ -1759,6 +1765,7 @@ a.button-fb {
     z-index: 26;
     width: 139px;
     height: 44px;
+    font-weight: 700;
 }
 
 .address__hours {
@@ -1766,7 +1773,6 @@ a.button-fb {
     font-size: 14px;
     line-height: 20px;
     padding-top: 5px;
-    padding-bottom: 4px;
     margin-bottom: 22px;
 }
 
@@ -1862,6 +1868,7 @@ a.button-fb {
     text-align: center;
     margin: 0;
     padding: 0;
+    margin-bottom: 10px;
 }
 
 .footer__nav-about-item {
@@ -1879,6 +1886,7 @@ a.button-fb {
 .footer__nav-about-item-link a {
    margin-left: 20px;
 }
+
 
 .con {
     margin: 0;
@@ -1900,6 +1908,7 @@ a.button-fb {
 .sorting:hover,
 .sorting:focus {
     color: #323232;
+    background-image: url("../img/icon-down-dir-black.png");
 }
 
 input[type="checkbox"]:focus+label::before { 
@@ -2063,6 +2072,7 @@ a.button-vk:active {
     background-color: #ffffff;
     -webkit-box-shadow: inset 0px 2px 1px 0 #696969;
     box-shadow: inset 0px 2px 1px 0 #696969;
+    border: none;
 }
 
 .filter-input input[type="radio"]:disabled + .radio-indicator,
@@ -2086,3 +2096,73 @@ a.button-vk:active {
     animation-name: bounce;
     animation-duration: 0.3s;
 } 
+
+.filter-option {
+    margin: 0;
+    padding-right: 16px;
+}
+
+.price {
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.catalog-item__price:after {
+    content: " ";
+
+    position: absolute;
+    top: 5px;
+    right: -35px;
+    display: inline-block;
+    width: 31px;
+    height: 36px;
+    vertical-align: middle;
+    background-image: url("../img/ruble.svg");
+    background-repeat: no-repeat;
+}
+
+.button-send {
+    width: 126px;
+    height: 41px;
+    margin-top: -6px;
+    margin-left: 8px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.container-inner {
+    margin-bottom: 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 24;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.overlay-show {
+    display: block;
+}
+
+.cart__list-table {
+    border-bottom: 1px solid #999999;
+}
+
+.catalog__navigation-active a {
+    background-color: #d07058;
+}
+
+.filter-input input[type="radio"] + .radio-indicator:hover,
+.filter-input input[type="radio"] + .radio-indicator:focus,
+.filter-input input[type="checkbox"] + .checkbox-indicator:hover,
+.filter-input input[type="checkbox"] + .checkbox-indicator:focus {
+  opacity: 1;
+}
+
